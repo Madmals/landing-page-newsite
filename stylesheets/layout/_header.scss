@@ -1,0 +1,121 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.8vh;
+  align-items: center;
+  height: 9.7vh;
+  box-shadow: rgb(38, 57, 77) 0px 0px 30px -10px;
+  position: fixed;
+  width: 100%;
+  background-color: #ffff;
+  position: relative;
+
+
+
+  input {
+    border-radius: 0px 10px 10px 0px;
+    left: 9vw;
+    max-width: 80%;
+    font-size: 15px;
+    height: 8vh;
+    position: absolute;
+    border: 0.2px solid grey;
+    border-left: none;
+
+    &:focus {
+      border: 0.2px solid grey;
+      border-left: none;
+      outline: none;
+    }
+  }
+
+  .header__close {
+    position: absolute;
+    z-index: 23;
+    display: none;
+    left: 2vw;
+    border: solid 0.2px grey;
+    border-right: none;
+    height: 8vh;
+    padding: 5px;
+    border-radius: 10px 0px 0px 10px;
+
+    &:hover {
+      background-color: rgb(231, 228, 228);
+      height: 8vh;
+    }
+  }
+
+  .header__con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      height: 4.2vh;
+      padding: 0 1.7vh 0 1.7vh;
+    }
+  }
+
+  img {
+    height: 4vh;
+    cursor: pointer;
+    padding-right: 5vw;
+
+    &:hover {
+      height: 5vh;
+    }
+  }
+
+  input {
+    display: none;
+    width: 100%;
+  }
+
+
+
+  @include breakpoint(phablet) {
+
+    input {
+      display: block;
+      border: solid 0.2px grey;
+      border-radius: 10px;
+      left: 25vw;
+      width:65vw;
+      background: #f1f3f4;
+
+      &:focus{
+
+      border: solid 0.2px grey;
+      background-color: #fff;
+      padding-left: 2vw;
+      }
+    }
+
+    .header{
+
+    &__img{
+      padding-right: 2vw;
+    }
+
+    &__close{
+      left:20vw;
+      // background-color: aqua;
+    }
+
+    }
+    
+    
+
+
+  }
+
+}
+
+.none {
+  display: none;
+}

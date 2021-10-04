@@ -1,0 +1,70 @@
+
+main{
+	padding-top: 5vh;
+	overflow: scroll;
+
+	.news{
+	width:80vw;
+	margin: auto;
+		&__con{
+			padding-top: 5vh;
+		}
+		h2{
+			font-size:20px;
+
+		}
+
+		&__cardcon{
+			display: flex;
+			border: 1px solid rgb(230, 226, 226);
+			margin-bottom: 3vh;
+			padding:0 3vw 0 3vw;
+			border-radius: 12px;
+			height:100%;
+
+
+			img{
+				margin-top: 3vh;
+				height:18vh;
+				width:35vw;
+				object-fit: cover;
+				border-radius: 20px;
+				padding: 10px;
+			}
+		}
+
+		&__head{
+			h3{
+				font-size:18px;
+			}
+		}
+
+		&__headside{
+			display:flex;
+			h4{
+				padding-right:5vw ;
+			}
+		}
+
+	}
+
+
+		@include breakpoint(tablet) {
+			display:flex;
+			.news{
+				width: 60vw;
+			}
+		}
+
+		@include breakpoint(laptop){
+			padding:10px;
+
+			.news__cardcon{
+				height:30vh;
+
+				img{
+					height: 25vh;
+				}
+			}
+		}
+}

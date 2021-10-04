@@ -1,0 +1,171 @@
+.aside-left {
+  background-color: #ffff;
+  width: 235px;
+  position: absolute;
+  transform: translateX(-100%);
+  top: 0;
+  height: 100vh;
+  position: fixed;
+
+  h1 {
+    padding: 0.8vh 0 0.8vh 2.8vw;
+  }
+
+  &__con {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      width: 2em;
+    }
+
+    a {
+      height: 42px;
+      font-size: 2.23vh;
+      display: flex;
+      align-items: center;
+      padding: 24px;
+      color: #000;
+
+      &:hover {
+        background-color: $secondary-opacity;
+        color: black;
+      }
+      img {
+        height: 4.2vh;
+        padding-right: 2vw;
+      }
+    }
+  }
+}
+
+
+
+.aside-right{
+	display: none;
+
+
+  @include breakpoint(tablet){
+    padding-top:15vh;
+    display: block;
+    padding-left: 2vw;
+
+    &__weather-card{
+      max-width: 40vw;
+      border: 1px solid #e6e2e2;
+      border-radius: 10px;
+      padding:5px;
+    }
+
+    &__weather-card-header{
+      display: flex;
+      height:8.7vh;
+      justify-content: space-around;
+      align-items: center;
+
+
+
+      h2{
+        font-size:15px;
+      }
+
+      img{
+        height:3vh;
+      }
+    }
+
+    &__weather-today{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+
+    }
+
+
+    &__today-weather{
+      h4{
+        font-size:18px;
+      }
+
+      h1{
+        font-size:28px;
+      }
+    }
+
+    &__cloud{
+      img{
+        height: 8.2vh;
+      }
+    }
+
+    &__weekly{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    &__concard-week{
+      padding-right: 1vw;
+      width:10vw;
+      h3{
+        font-size:12px;
+        text-align: center;
+      }
+
+      h4{
+        font-size:10px;
+        text-align: center;
+      }
+    }
+
+    &__footer{
+      padding: 2vh 6vw;
+      a:not(:last-child){
+        border-right: 1px solid black;
+        padding-right:1vw;
+      }
+    }
+
+
+    &__tags{
+      padding: 10px;
+    }
+
+    &__tagcon{
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+
+      button{
+        width:14vw;
+        height:7vh;
+        border-radius:10px;
+        border: 1px solid grey;
+
+        &:hover{
+          cursor: pointer;
+          background-color:#fff;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        }
+      }
+    }
+  }
+
+  @include breakpoint(laptop){
+       &__weather-card{
+         width: 30vw;
+       }
+
+
+  }
+}
+
+.test{
+
+  transform: translateX(0);
+}

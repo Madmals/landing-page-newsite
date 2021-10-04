@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+
+.btn{
+	background-color:#ffe600;
+	border: 1px solid transparent;
+	padding: 1.7vh 2.5vw;
+	// width: 100%;
+	cursor: pointer;
+	transition: all ease-in-out 0.4s;
+
+	&:hover{
+		background-color:transparent;
+		color: $text-color;
+		border-color:#9c9a89
+	}
+}

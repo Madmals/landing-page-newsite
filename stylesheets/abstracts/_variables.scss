@@ -1,0 +1,121 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+//font google
+$google-san: 'Open Sans',serif;
+
+
+
+/// Copy text color
+
+/// @type Color
+$secondary: #1967d2 !default;
+
+// @type Color
+$secondary-opacity:rgba(25, 103, 210, 0.4) !default;
+
+/// @type Color
+$text-color: #1e1e1e !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+///dark
+$dark: rgb(29,29,29);
+
+///light
+$light: #fff;
+
+
+///primary
+$primary: rgb(162,162,246);
+
+
+///secondary
+$secondary: rgb(162,162,246);
+
+///background
+$bg: rgb(244,244,255); 
+
+
+///spacing medium
+$spacing-md:16px;
+
+///spacing large
+$spacing-lg:32px;
+
+///border-radius
+$borderRadius:12px;
+
+///header-height
+$headerHeight:100px;
+
+
+///breakpoint
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 1120px) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 1024px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 768px) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 600px)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 320px)  { @content ; }
+
+  }
+}
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+
+
+
+
+
+
+
+
