@@ -2,7 +2,7 @@
 
 # Clone google news 
 
-An attempt to clone [Google News](https://news.google.com/topstories?hl=en-MY&gl=MY&ceid=MY:en) 
+clone of [Google News](https://news.google.com/topstories?hl=en-MY&gl=MY&ceid=MY:en) 
 
 # Live version
 
