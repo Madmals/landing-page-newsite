@@ -1,18 +1,26 @@
 
 
-# Clone google news 
+# General Info
+---
 
-clone of [Google News](https://news.google.com/topstories?hl=en-MY&gl=MY&ceid=MY:en) 
 
-# Live version
+- Landing Page News is a mobile responsive educational website clone from the official website Google news site
 
-[Live version](https://priceless-pasteur-1589ae.netlify.app/)
-
-## Desktop
+<p align="center">
 <img src="./assets/screencapture-priceless-pasteur-1589ae-netlify-app-2021-10-10-21_54_50.png" alt="drawing" width="300"/>
+</p>
 
-#### Note
+# Technologies
+---
+Project is created with:
+- HTML
+- SASS
+- JavaScript
 
-Api news limit for 100 req perday
+# Link
+---
+[Link](https://priceless-pasteur-1589ae.netlify.app/)
+
+
 
 
